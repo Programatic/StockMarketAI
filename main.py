@@ -63,9 +63,7 @@ for i in range(60,len(train)):
     x_train.append(scaled_data[i-60:i,0])
     y_train.append(scaled_data[i,0])
 x_train, y_train = np.array(x_train), np.array(y_train)
-
 x_train = np.reshape(x_train, (x_train.shape[0],x_train.shape[1],1))
-
 #%%
 # create and fit the LSTM network
 model = Sequential()
@@ -76,8 +74,10 @@ model.add(Dense(1))
 model.compile(loss='mean_squared_error', optimizer='adam')
 model.fit(x_train, y_train, epochs=1, batch_size=1, verbose=2)
 
+#%%
 #predicting 246 values, using past 60 from the train data
 inputs = new_data[len(new_data) - len(valid) - 60:].values
+print(len(new_data) - len(valid) - 60)
 inputs = inputs.reshape(-1,1)
 inputs  = scaler.transform(inputs)
 
@@ -91,7 +91,7 @@ closing_price = model.predict(X_test)
 closing_price = scaler.inverse_transform(closing_price)
 
 
-#%%
+#%%›
 train = new_data[:1000]
 valid = new_data[1000:]
 valid['Predictions'] = closing_price
