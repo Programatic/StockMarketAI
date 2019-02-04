@@ -19,5 +19,9 @@ data.head() #just verify that we read the data properly
 #%% Scaling and dividing the data into test and train
 scaler = MinMaxScaler()
 
+data['Price'] = scaler.fit_transform
+
 train_data = data.loc[:3095, 'Price']
 test_data = data.loc[3095:, 'Price']
+
+
