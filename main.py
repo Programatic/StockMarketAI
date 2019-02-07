@@ -6,22 +6,57 @@ from keras.layers import Dense, Dropout, LSTM
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 
-raw = pd.read_csv("EOD-MCD.csv").sort_index(ascending=False)
-raw['Date'] = pd.to_datetime(raw['Date'], format="%Y-%m-%d")
-raw.index = raw['Date']
+rawMCD = pd.read_csv("EOD-MCD.csv").sort_index(ascending=False)
+rawMCD.index = rawMCD['Date']
 
-data = pd.DataFrame(index=range(0, len(raw)), data=raw.loc[:, ['Date', 'Close']].values, columns=['Date', 'Price'])
+rawDIS = pd.read_csv("EOD-DIS.csv").sort_index(ascending=False)
+rawDIS.index = rawDIS['Date']
+
+dataMCD = pd.DataFrame(index=range(0, len(rawMCD)), data=rawMCD.loc[:, ['Date', 'Close']].values, columns=['Date', 'price'])
+dataDIS = pd.DataFrame(index=range(0, len(rawDIS)), data=rawDIS.loc[:, ['Date', 'Close']].values, columns=['Date', 'price'])
+
+dataDIS['Date'] = pd.to_datetime(dataDIS['Date'], format="%Y-%m-%d")
+dataMCD['Date'] = pd.to_datetime(dataMCD['Date'], format="%Y-%m-%d")
 #%% Plots and lists the data that will be used for training and testing
-plt.plot(data['Date'], data['Price'])
+plt.plot(dataMCD['Date'], dataMCD['price'])
 
-data.head() #just verify that we read the data properly
+dataMCD.head() #just verify that we read the data properly
 
 #%% Scaling and dividing the data into test and train
 scaler = MinMaxScaler()
 
-data['Price'] = scaler.fit_transform
+dataMCD['price'] = scaler.fit_transform(dataMCD.price.values.reshape(-1,1))
 
-train_data = data.loc[:3095, 'Price']
-test_data = data.loc[3095:, 'Price']
+x_train = []
+y_train = []
+for i in range(60, 11000):
+    x_train.append(dataMCD.loc[i-60:i, 'price'])
+    y_train.append(dataMCD.loc[i, 'price'])
+x_train, y_train = np.array(x_train), np.array(y_train)
 
+x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
+#%% This is what we used to train and setup the network 
+regressor = Sequential()
 
+regressor.add(LSTM(units = 50, return_sequences = True, input_shape = (x_train.shape[1], 1)))
+regressor.add(Dropout(0.2))
+
+regressor.add(LSTM(units = 50, return_sequences = True))
+regressor.add(Dropout(0.2))
+
+regressor.add(LSTM(units = 50, return_sequences = True))
+regressor.add(Dropout(0.2))
+
+regressor.add(LSTM(units = 50))
+regressor.add(Dropout(0.2))
+
+regressor.add(Dense(units = 1))
+
+regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
+
+returns = regressor.fit(x_train, y_train, epochs = 20, batch_size = 32)
+#%% Plot the loss over the eopchs
+
+plt.plot(returns.history['loss'])
+
+#%%
