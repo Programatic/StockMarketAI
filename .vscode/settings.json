@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/Users/ford/anaconda3/bin/python"
+    "python.pythonPath": "/opt/miniconda3/envs/stemenv/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }

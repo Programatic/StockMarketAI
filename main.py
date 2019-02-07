@@ -19,17 +19,19 @@ dataDIS['Date'] = pd.to_datetime(dataDIS['Date'], format="%Y-%m-%d")
 dataMCD['Date'] = pd.to_datetime(dataMCD['Date'], format="%Y-%m-%d")
 #%% Plots and lists the data that will be used for training and testing
 plt.plot(dataMCD['Date'], dataMCD['price'])
+plt.plot(dataDIS['Date'], dataDIS['price'])
 
 dataMCD.head() #just verify that we read the data properly
 
 #%% Scaling and dividing the data into test and train
 scaler = MinMaxScaler()
 
+dataDIS['price'] = scaler.fit_transform(dataDIS.price.values.reshape(-1,1))
 dataMCD['price'] = scaler.fit_transform(dataMCD.price.values.reshape(-1,1))
 
 x_train = []
 y_train = []
-for i in range(60, 11000):
+for i in range(60, 4000):
     x_train.append(dataMCD.loc[i-60:i, 'price'])
     y_train.append(dataMCD.loc[i, 'price'])
 x_train, y_train = np.array(x_train), np.array(y_train)
@@ -59,4 +61,19 @@ returns = regressor.fit(x_train, y_train, epochs = 20, batch_size = 32)
 
 plt.plot(returns.history['loss'])
 
-#%%
+#%% Partition the test data and test it
+x_test = []
+for i in range(60, 90):
+    x_test.append(dataDIS.loc[i-60:i, 'price'])
+x_test = np.array(x_test)
+x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+
+predicted = regressor.predict(x_test)
+#%% Plot the predicted
+predicted = scaler.inverse_transform(predicted)
+
+df = pd.DataFrame(data=predicted, columns=['price'])
+df['date'] = dataDIS.loc[:, 'Date']
+
+plt.plot(df['date'], df['price'])
+plt.plot(dataDIS.loc[0:30, 'Date'], dataDIS.loc[0:30, 'price'])
