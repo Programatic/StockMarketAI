@@ -1,0 +1,367 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.10)  10 FEB 2019 19:36
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**StockMarketAI.tex
+(./StockMarketAI.tex
+LaTeX2e <2018-04-01> patch level 5
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count88
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+) (./StockMarketAI.aux)
+\openout1 = `StockMarketAI.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box28
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+
+(./LinearRegression.pdf_tex
+<LinearRegression.pdf, id=1, page=1, 337.1257pt x 218.7842pt>
+File: LinearRegression.pdf Graphic file (type pdf)
+<use LinearRegression.pdf, page 1>
+Package pdftex.def Info: LinearRegression.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 253.1188pt.
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.9473pt too wide) in paragraph at lines 33--34
+[]\OT1/cmr/m/n/12 This type of learn-ing is called su-per-vised ma-chine learn-
+ing be-cause through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+[2 <./LinearRegression.pdf>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 49.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 49.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 49.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+[3] (./Sigmoid.pdf_tex
+<Sigmoid.pdf, id=329, page=1, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 1>
+Package pdftex.def Info: Sigmoid.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=330, page=2, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 2>
+Package pdftex.def Info: Sigmoid.pdf , page2 used on input line 58.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=331, page=3, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 3>
+Package pdftex.def Info: Sigmoid.pdf , page3 used on input line 60.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=332, page=4, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 4>
+Package pdftex.def Info: Sigmoid.pdf , page4 used on input line 62.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=333, page=5, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 5>
+Package pdftex.def Info: Sigmoid.pdf , page5 used on input line 64.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=334, page=6, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 6>
+Package pdftex.def Info: Sigmoid.pdf , page6 used on input line 66.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=335, page=7, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 7>
+Package pdftex.def Info: Sigmoid.pdf , page7 used on input line 68.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=336, page=8, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 8>
+Package pdftex.def Info: Sigmoid.pdf , page8 used on input line 70.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=337, page=9, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 9>
+Package pdftex.def Info: Sigmoid.pdf , page9 used on input line 72.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=338, page=10, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 10>
+Package pdftex.def Info: Sigmoid.pdf , page10 used on input line 74.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=339, page=11, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 11>
+Package pdftex.def Info: Sigmoid.pdf , page11 used on input line 76.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=340, page=12, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 12>
+Package pdftex.def Info: Sigmoid.pdf , page12 used on input line 78.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=341, page=13, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 13>
+Package pdftex.def Info: Sigmoid.pdf , page13 used on input line 80.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=342, page=14, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 14>
+Package pdftex.def Info: Sigmoid.pdf , page14 used on input line 82.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=343, page=15, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 15>
+Package pdftex.def Info: Sigmoid.pdf , page15 used on input line 84.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+<Sigmoid.pdf, id=344, page=16, 291.94862pt x 193.59044pt>
+File: Sigmoid.pdf Graphic file (type pdf)
+<use Sigmoid.pdf, page 16>
+Package pdftex.def Info: Sigmoid.pdf , page16 used on input line 86.
+(pdftex.def)             Requested size: 390.0pt x 258.6152pt.
+)
+
+LaTeX Warning: Citation `Gil:02' on page 4 undefined on input line 61.
+
+[4 <./Sigmoid.pdf> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+> <./Sigmoid.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
+ pdfs with page group included in a single page
+>]
+No file StockMarketAI.bbl.
+[5] (./StockMarketAI.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2037 strings out of 492639
+ 28025 string characters out of 6135497
+ 98250 words of memory out of 5000000
+ 5917 multiletter control sequences out of 15000+600000
+ 9109 words of font info for 32 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,13n,35p,1493b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on StockMarketAI.pdf (5 pages, 140636 bytes).
+PDF statistics:
+ 377 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+
