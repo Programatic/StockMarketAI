@@ -1,13 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.10)  10 FEB 2019 19:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  11 FEB 2019 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **StockMarketAI.tex
 (./StockMarketAI.tex
-LaTeX2e <2018-04-01> patch level 5
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size12.clo
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -22,15 +23,15 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -43,20 +44,20 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
@@ -64,14 +65,15 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texmf-dist/tex/latex/float/float.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count88
 \float@exts=\toks15
 \float@box=\box26
 \@float@everytoks=\toks16
 \@floatcapt=\box27
-) (./StockMarketAI.aux)
+)
+(./StockMarketAI.aux)
 \openout1 = `StockMarketAI.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -87,7 +89,7 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
 \scratchdimen=\dimen105
@@ -100,31 +102,31 @@ LaTeX Font Info:    ... okay on input line 11.
 \MPnumerator=\count93
 \makeMPintoPDFobject=\count94
 \everyMPtoPDFconversion=\toks18
-) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -133,12 +135,12 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -152,7 +154,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -169,7 +171,7 @@ Package pdftex.def Info: LinearRegression.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 390.0pt x 253.1188pt.
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (3.9473pt too wide) in paragraph at lines 33--34
 []\OT1/cmr/m/n/12 This type of learn-ing is called su-per-vised ma-chine learn-
 ing be-cause through
@@ -273,95 +275,101 @@ File: Sigmoid.pdf Graphic file (type pdf)
 <use Sigmoid.pdf, page 16>
 Package pdftex.def Info: Sigmoid.pdf , page16 used on input line 86.
 (pdftex.def)             Requested size: 390.0pt x 258.6152pt.
-)
+) [4 <./Sigmoid.pdf> <./Sigmoid.pdf
 
-LaTeX Warning: Citation `Gil:02' on page 4 undefined on input line 61.
-
-[4 <./Sigmoid.pdf> <./Sigmoid.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 > <./Sigmoid.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./Sigmoid.pdf): PDF inclusion: multiple
- pdfs with page group included in a single page
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Sigmoid.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
 >]
+<images/nn.png, id=350, 480.79625pt x 259.97125pt>
+File: images/nn.png Graphic file (type png)
+<use images/nn.png>
+Package pdftex.def Info: images/nn.png  used on input line 64.
+(pdftex.def)             Requested size: 390.0pt x 210.881pt.
+
+
+LaTeX Warning: Citation `Gil:02' on page 5 undefined on input line 69.
+
 No file StockMarketAI.bbl.
-[5] (./StockMarketAI.aux)
+[5 <./images/nn.png (PNG copy)>] (./StockMarketAI.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2037 strings out of 492639
- 28025 string characters out of 6135497
- 98250 words of memory out of 5000000
- 5917 multiletter control sequences out of 15000+600000
+ 2044 strings out of 492649
+ 28830 string characters out of 6129622
+ 98892 words of memory out of 5000000
+ 5915 multiletter control sequences out of 15000+600000
  9109 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,35p,1493b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on StockMarketAI.pdf (5 pages, 140636 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on StockMarketAI.pdf (5 pages, 243148 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
+ 378 PDF objects out of 1000 (max. 8388607)
  241 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

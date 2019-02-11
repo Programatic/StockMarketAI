@@ -70,7 +70,7 @@ x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
 
 predicted = regressor.predict(x_test)
 #%% Plot the predicted
-predicted = scaler.inverse_transform(predicted)
+# predicted = scaler.inverse_transform(predicted)da
 
 df = pd.DataFrame(data=predicted, columns=['price'])
 df['date'] = dataDIS.loc[:, 'Date']

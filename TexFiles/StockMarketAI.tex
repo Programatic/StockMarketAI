@@ -16,7 +16,7 @@
 \end{abstract}
 
 \section{Introduction}
-When most people talk about Artificial Intelligence, they are describing machine learning. Machine learning has several difference subsections of tools that can be used to teach a machine from previous experiences by adjusting to inputs to "perform human-like tasks" (SAS). In this particular experiment, we will be using Neural Networks. Neural Networks are very powerful tools because they grant flexibility to many different scenarios depending on how they are constructed. 
+When most people talk about Artificial Intelligence, they are describing machine learning. Machine learning has several difference subsections of tools that can be used to teach a machine from previous experiences by adjusting to inputs to ``perform human-like tasks" (SAS). In this particular experiment, we will be using Neural Networks. Neural Networks are very powerful tools because they grant flexibility to many different scenarios depending on how they are constructed. 
 
 
 \paragraph{History}
@@ -48,13 +48,21 @@ This procedure is simple, not terribly computationally heavy, and works best whe
 \paragraph{Modern Networks}
 \textbf{Backpropagation} was developed across multiple researchers in the 60s and is still commonly used. To break down what backpropagation is, is we have a cost function $C$ with respect to the weight $w$ in the network. We take the partial derivative of $C$ in respect to $w$ to see how quickly the cost changes when we change the weights. The reason backpropagation is so important was because it not only became a much faster learning algorithm, but also tells us detailed information about the change in the system in respect to the weights.  \\
 
-With a newer, faster, and all around better learning algorithm, we were still bottle necked by the actual perceptron itself. When we have some tiny change in its weights, it could cause a drastic change in the output, which actually makes training more difficult. If we can more finely control the weights to have more fine control over the output, we could more accurately train layers to get the results we want. This is where the sigmoid function comes in handy. If we replace the threshold with the sigmoid function, as pictured below, we will then be able more finely change the outputs with the inputs, giving us a higher degree of accuracy. 
+With a newer, faster, and all around better learning algorithm, we were still bottle necked by the actual perceptron itself. When we have some tiny change in its weights, it could cause a drastic change in the output, which actually makes training more difficult. If we can more finely control the weights to have more fine control over the output, we could more accurately train layers to get the results we want. This is where the sigmoid function comes in handy. If we replace the threshold with the sigmoid function, as pictured below, we will then be able more finely change the outputs with the inputs, giving us a higher degree of accuracy.
 
 \begin{figure}[H]
     \centering
     \def\svgwidth{\columnwidth}
     \input{Sigmoid.pdf_tex}
     \caption{An example of a sigmoid function}
+\end{figure}
+
+You may be wondering, why use the sigmoid function instead of just having the threshold? Well, the threshold is very linear and doesn't give much opportunity to learn around the data. When the \textbf{activation function} is non-linear (like the sigmoid function) it allows the network as a whole to better adapt to the data. Note, the activation function is what is used to determine the output of the nodes. Here is an image of what a complete Neural Network will use as Figure 3.
+
+%https://medium.com/@curiousily/tensorflow-for-hackers-part-iv-neural-network-from-scratch-1a4f504dfa8
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{images/nn.png}
+  \caption{A neural network}
 \end{figure}
 
 \section{Previous work}\label{previous work}
