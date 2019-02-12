@@ -19,7 +19,12 @@ dataDIS['Date'] = pd.to_datetime(dataDIS['Date'], format="%Y-%m-%d")
 dataMCD['Date'] = pd.to_datetime(dataMCD['Date'], format="%Y-%m-%d")
 #%% Plots and lists the data that will be used for training and testing
 plt.plot(dataMCD['Date'], dataMCD['price'])
-plt.plot(dataDIS['Date'], dataDIS['price'])
+# plt.plot(dataDIS['Date'], dataDIS['price'])
+
+plt.xlabel('Time')
+plt.ylabel('Stock Price')
+
+plt.savefig('TexFiles/images/graph1.png')
 
 dataMCD.head() #just verify that we read the data properly
 
@@ -56,7 +61,7 @@ regressor.add(Dense(units = 1))
 
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
-returns = regressor.fit(x_train, y_train, epochs = 20, batch_size = 32)
+returns = regressor.fit(x_train, y_train, epochs = 10, batch_size = 32)
 #%% Plot the loss over the eopchs
 
 plt.plot(returns.history['loss'])

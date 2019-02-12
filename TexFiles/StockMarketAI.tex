@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{booktabs}
 
 \begin{document}
 \maketitle
@@ -119,11 +120,21 @@ Lastly, we need to actually generate the output for this cell. This step once ag
   \caption{Last section of LSTM}
 \end{figure}
 
-\paragraph{Conclusion}
-In total, because of the ability to be trained to forget unimportant information but still remember the past, it becomes the strongest RNN to use. 
+%https://medium.com/@vivek.yadav/why-dropouts-prevent-overfitting-in-deep-neural-networks-937e2543a701
+\paragraph{Final Notes}
+In total, because of the ability to be trained to forget unimportant information but still remember the past, it becomes the strongest RNN to use. Lastly, there is a major issue to be aware. Say we have a simple NN that we want to use to identify if we have a cat in the image. If we pass the same image to the NN over and over again, with no variation, the NN will become \textbf{overfitted}. Overfitting is simply when the NN trains to conform to the test data only so in this case, it could become perfectly accurate at knowing if that specific picture has a cat, but will be unable to determine if any other photo does accurately. One way to counter this is to use dropouts. Dropouts will drop a percentage of the data in otder to force more variability in the data being passed. Although using dropouts seem counter intuitive, especially in the case of stock markets where order matters (which will be tested), they can bring significant accuracy gains. 
 
-\section{Results}\label{results}
-In this section we describe the results.
+\section{Setup}
+Now that we have selected the RNN to use, we can go through and configure the model. All code is on github at: https://github.com/Programatic/StockMarketAI
+Just a note, all code is in the form of a Jupyter notebook in vscode which allows for more modular development with data science tools. \\
+
+\section{Results}
+For the first test, the model being used is going to be LSTM $\rightarrow$ Dropout $\rightarrow$ LSTM $\rightarrow$ Dropout $\rightarrow$ LSTM $\rightarrow$ Dropout $\rightarrow$ LSTM $\rightarrow$ Dropout $\rightarrow$ Dense. The dense layer just takes the information from the previous layers and condenses it to a dimension we want, in this case 1 (as in 1 output value for the price of the stock). \\
+Here is a graph of McDonalds stock from 1970. The training set is going to be the first $\frac{1}{3}$ of the stock and the test will be the rest. 
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{images/graph1.png}
+  \caption{McDonalds Stock}
+\end{figure}
 
 \section{Conclusions}\label{conclusions}
 We worked hard, and achieved very little.
