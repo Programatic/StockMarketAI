@@ -1,0 +1,41 @@
+\begin{thebibliography}{10}
+
+\bibitem{kurenkov}
+A.~Kurenkov, ``A 'brief' history of neural nets and deep learning.''
+
+\bibitem{brownlee_2016}
+J.~Brownlee, ``Supervised and unsupervised machine learning algorithms,'' Sep
+  2016.
+
+\bibitem{nielsen_a._1970}
+M.~Nielsen and M.~A., ``Neural networks and deep learning,'' Jan 1970.
+
+\bibitem{valkov_2017}
+V.~Valkov, ``Creating a neural network from scratch - tensorflow for
+  hackers (part iv),'' May 2017.
+
+\bibitem{maladkar_2018}
+K.~Maladkar, ``6 types of artificial neural networks currently being used in
+  ml,'' Nov 2018.
+
+\bibitem{tch_2017}
+A.~Tch, ``The mostly complete chart of neural networks, explained,'' Aug 2017.
+
+\bibitem{britz_2016}
+D.~Britz, ``Recurrent neural networks tutorial, part 1 – introduction to
+  rnns,'' Jul 2016.
+
+\bibitem{yan_2016}
+S.~Yan, ``Understanding lstm and its diagrams – ml review – medium,'' Mar
+  2016.
+
+\bibitem{yadav_2019}
+V.~Yadav, ``Why dropouts prevent overfitting in deep neural networks,'' 2019.
+
+\bibitem{ruder_2019}
+S.~Ruder, ``An overview of gradient descent optimization algorithms,'' 2019.
+
+\bibitem{sas}
+``Artificial intelligence – what it is and why it matters.''
+
+\end{thebibliography}

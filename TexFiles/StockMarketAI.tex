@@ -12,16 +12,12 @@
 \begin{document}
 \maketitle
 
-\begin{abstract}
-\color{red} //TODO
-\end{abstract}
-
 \section{Introduction}
-\quad When most people talk about Artificial Intelligence, they are describing machine learning. Machine learning has several difference subsections of tools that can be used to teach a machine from previous experiences by adjusting to inputs to ``perform human-like tasks" (SAS). In this particular experiment, Neural Networks will be used. Neural Networks are very powerful tools because they grant flexibility to many different scenarios depending on how they are constructed. 
+\quad When most people talk about Artificial Intelligence, they are describing machine learning. Machine learning has several difference subsections of tools that can be used to teach a machine from previous experiences by adjusting to inputs to ``perform human-like tasks". In this particular experiment, Neural Networks will be used. Neural Networks are very powerful tools because they grant flexibility to many different scenarios depending on how they are constructed. 
 
 
 \paragraph{History}
-At its core, machine learning is all about taking in inputs and creating a generalized function that can then be extended to predict future values. In fact, humans have been doing basic variations of this for hundreds of years: linear regressions. While some function are too difficult to create, a line of best fit can be found on data with an input (x) and output (y) to create a function that can approximate or predict a different set of data. See Figure 1. 
+At its core, machine learning is all about taking in inputs and creating a generalized function that can then be extended to predict future values. In fact, humans have been doing basic variations of this for hundreds of years: linear regressions. While some function are too difficult to create, a line of best fit can be found on data with an input (x) and output (y) to create a function that can approximate or predict a different set of data. See Figure 1. \cite{kurenkov}
 %http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-nets-and-deep-learning/
 
 \begin{figure}[H]
@@ -31,16 +27,16 @@ At its core, machine learning is all about taking in inputs and creating a gener
     \caption{An example of linear regression used on input data to create a function to approximate more data}
 \end{figure}
 
-This type of learning is called supervised machine learning because through the process of approximating the function, input and output data can be used to make the approximation much more accurate. Unsupervised learning, although not important in this experiment, is learning where there are not output values so different learning methods are used to learn more about the inputs and how it is structured. \\%https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/
+This type of learning is called supervised machine learning because through the process of approximating the function, input and output data can be used to make the approximation much more accurate. Unsupervised learning, although not important in this experiment, is learning where there are not output values so different learning methods are used to learn more about the inputs and how it is structured. \cite{brownlee_2016}\\%https://machinelearningmastery.com/supervised-and-unsupervised-machine-learning-algorithms/
 
 %http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-nets-and-deep-learning/
-Skip forward about 150 years to the 1950s, there is the development of the Perceptron. The Perceptron was created by Frank Rosenblatt to be a mathematical model of the neurons in our brains. It takes a set of inputs from nearby Perceptrons, multiplies each of the inputs by a valued weight, and will output a 1 if the weighted inputs reach a threshold, otherwise a 0. This was massive back then because Perceptrons could create basic OR/AND/NOT functions. This was the gateway to formal logic for computers. The most exciting part, however, was that this model could learn by slightly adjusting the weights whenever the output is too low/high. It followed this general order: "
+Skip forward about 150 years to the 1950s, there is the development of the Perceptron. The Perceptron was created by Frank Rosenblatt to be a mathematical model of the neurons in our brains. It takes a set of inputs from nearby Perceptrons, multiplies each of the inputs by a valued weight, and will output a 1 if the weighted inputs reach a threshold, otherwise a 0. This was massive back then because Perceptrons could create basic OR/AND/NOT functions. This was the gateway to formal logic for computers. The most exciting part, however, was that this model could learn by slightly adjusting the weights whenever the output is too low/high. It followed this general order: " 
 \begin{enumerate}
 \item Start off with a Perceptron having random weights and a training set
 \item For the inputs of an example in the training set, compute the Perceptron’s output
 \item If the output of the Perceptron does not match the output that is known to be correct for the example: If the output should have been 0 but was 1, decrease the weights that had an input of 1. If the output should have been 1 but was 0, increase the weights that had an input of 1.
 \item Go to the next example in the training set and repeat steps 2-4 until the Perceptron makes no more mistakes"
-\end{enumerate}
+\end{enumerate} \cite{kurenkov}
 
 This procedure is simple, not terribly computationally heavy, and works best when there is only a limited set of outputs due to thresholds. This is exactly what classification requires - out of a set, accurately determine which output the input data is. Rosenblatt implemented the Perceptrons and inputted 20x20 inputs to accurately classify shapes. Although simple, when many Perceptrons are put together in series called \textbf{layers}, the computation power becomes much higher and can work on much more complex data. The same happens with multiple layers, where data is put into the input layer, which feeds their output to "hidden" layers who pass their information on to another layer until the information is passed to an output layer. The importance of these hidden layers stems from their ability to find features within the data. Features are essentially specific parts about the data passing through. For instance, if the network was trained to identify whether there was a cat in the image, the layer could identify whether the image has a cat mouth or not. This, in turn, allows it to become more accurate. However, there becomes several serious issues when done. First, Rosenblatt's method of training does not work with multiple layers. The Perceptrons also can't work on complex features because of the extreme linearity of the weight function inside the Perceptrons. 
 
@@ -58,17 +54,17 @@ With a newer, faster, and all around better learning algorithm, there is still b
     \caption{An example of a sigmoid function}
 \end{figure}
 
-You may be wondering, why use the sigmoid function instead of just having the threshold? Well, the threshold is very linear and doesn't give much opportunity to learn around the data. When the \textbf{activation function} is non-linear (like the sigmoid function) it allows the network as a whole to better adapt to the data. Note, the activation function is what is used to determine the output of the nodes. Here is an image of what a complete Neural Network will use as Figure 3.
+You may be wondering, why use the sigmoid function instead of just having the threshold? Well, the threshold is very linear and doesn't give much opportunity to learn around the data. When the \textbf{activation function} is non-linear (like the sigmoid function) it allows the network as a whole to better adapt to the data. Note, the activation function is what is used to determine the output of the nodes. Here is an image of what a complete Neural Network will use as Figure 3. \cite{nielsen_a._1970}
 
 %https://medium.com/@curiousily/tensorflow-for-hackers-part-iv-neural-network-from-scratch-1a4f504dfa8
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{images/nn.png}
-  \caption{A neural network}
+  \caption{A neural network \cite{valkov_2017}}
 \end{figure}
 
 \section{Different Types}
 %https://www.analyticsindiamag.com/6-types-of-artificial-neural-networks-currently-being-used-in-todays-technology/
-\quad With the basics of what a neural network is and how it developed, it is important to cover the different types of Neural Networks - which will now just be referred to as NN - to best decide which will be used for this experiment. You will understand which one will be chosen and why it is the only one that can work in a moment. The main types are demonstrated in a graphic by Fjodor van Veen from Asimov Institute. 
+\quad With the basics of what a neural network is and how it developed, it is important to cover the different types of Neural Networks - which will now just be referred to as NN - to best decide which will be used for this experiment. You will understand which one will be chosen and why it is the only one that can work in a moment. The main types are demonstrated in a graphic by Fjodor van Veen from Asimov Institute.  \cite{maladkar_2018}
 
 %https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
 \begin{figure}[H]
@@ -76,11 +72,11 @@ You may be wondering, why use the sigmoid function instead of just having the th
 \end{figure}
 
 \paragraph{Choosing}
-There are many different options to choose from, however, the majority of them can't be used. Why? In this particular experiment, NN are being used to predict stock prices. The stock market doesn't arbitrarily choose the price every second, instead, the price is a derived from the previous prices to create a new price (it is also important to note stocks are very dependent on the news around the company). This \textit{requires} the NN to remember previous information to make informed decisions. As a result, only Recurrent Neural Networks (RNN) can be used. Something to note, GRU and LSTM are a subsection of RNN not demonstrated in the figure above.   
+There are many different options to choose from, however, the majority of them can't be used. Why? In this particular experiment, NN are being used to predict stock prices. The stock market doesn't arbitrarily choose the price every second, instead, the price is a derived from the previous prices to create a new price (it is also important to note stocks are very dependent on the news around the company). This \textit{requires} the NN to remember previous information to make informed decisions. As a result, only Recurrent Neural Networks (RNN) can be used. Something to note, GRU and LSTM are a subsection of RNN not demonstrated in the figure above. [6]  \nocite{tch_2017}
 
 %http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/
 \paragraph{RNN}
-What is so special about RNN? To put it short, RNN are a special type of NN where the previous information directly affects the result of the next step in a sequential order. While in theory they are able to have arbitrarily long pieces of sequential information, a generic RNN is unable to do so. This is very bad in the context of running it on stock data as stock data can be over decades. This is why LSTM - long short term memory - are used.
+What is so special about RNN? To put it short, RNN are a special type of NN where the previous information directly affects the result of the next step in a sequential order. While in theory they are able to have arbitrarily long pieces of sequential information, a generic RNN is unable to do so. This is very bad in the context of running it on stock data as stock data can be over decades. This is why LSTM - long short term memory - are used. [7] \nocite{britz_2016}
 
 %https://colah.github.io/posts/2015-08-Understanding-LSTMs/
 \paragraph{LSTM}
@@ -118,11 +114,11 @@ Lastly, we need to actually generate the output for this cell. This step once ag
 \begin{figure}[H]
   \includegraphics[width=\linewidth]{images/LastValve.png}
   \caption{Last section of LSTM}
-\end{figure}
+\end{figure} All from [8]\nocite{yan_2016}
 
 %https://medium.com/@vivek.yadav/why-dropouts-prevent-overfitting-in-deep-neural-networks-937e2543a701
 \paragraph{Final Notes}
-In total, because of the ability to be trained to forget unimportant information but still remember the past, it becomes the strongest RNN to use. Lastly, there is a major issue to be aware. Say we have a simple NN that we want to use to identify if we have a cat in the image. If we pass the same image to the NN over and over again, with no variation, the NN will become \textbf{overfitted}. Overfitting is simply when the NN trains to conform to the test data only so in this case, it could become perfectly accurate at knowing if that specific picture has a cat, but will be unable to determine if any other photo does accurately. One way to counter this is to use dropouts. Dropouts will drop a percentage of the data in otder to force more variability in the data being passed. Although using dropouts seem counter intuitive, especially in the case of stock markets where order matters (which will be tested), they can bring significant accuracy gains. 
+In total, because of the ability to be trained to forget unimportant information but still remember the past, it becomes the strongest RNN to use. Lastly, there is a major issue to be aware. Say we have a simple NN that we want to use to identify if we have a cat in the image. If we pass the same image to the NN over and over again, with no variation, the NN will become \textbf{overfitted}. Overfitting is simply when the NN trains to conform to the test data only so in this case, it could become perfectly accurate at knowing if that specific picture has a cat, but will be unable to determine if any other photo does accurately. One way to counter this is to use dropouts. Dropouts will drop a percentage of the data in otder to force more variability in the data being passed. Although using dropouts seem counter intuitive, especially in the case of stock markets where order matters (which will be tested), they can bring significant accuracy gains. [9]  \nocite{yadav_2019}
 
 \section{Setup}
 Now that we have selected the RNN to use, we can go through and configure the model. All code is on github at: https://github.com/Programatic/StockMarketAI
@@ -130,18 +126,84 @@ Just a note, all code is in the form of a Jupyter notebook in vscode which allow
 
 \section{Results}
 For the first test, the model being used is going to be LSTM $\rightarrow$ Dropout $\rightarrow$ LSTM $\rightarrow$ Dropout $\rightarrow$ LSTM $\rightarrow$ Dropout $\rightarrow$ LSTM $\rightarrow$ Dropout $\rightarrow$ Dense. The dense layer just takes the information from the previous layers and condenses it to a dimension we want, in this case 1 (as in 1 output value for the price of the stock). \\
-Here is a graph of Tata Motors stock. The training set is going to be the first part of the stock and the test will be  the rest. 
+
+Here is a graph of the full TATA Motors stock. TATA is a motor company from India and it is simply much easier to get stock data for free from India. 
 \begin{figure}[H]
-  \includegraphics[width=\linewidth]{images/T1.png}
-  \caption{McDonalds Stock}
+  \includegraphics[width=\linewidth]{images/TI.png}
+  \caption{TATA motor company stock}
 \end{figure}
 
-\section{Conclusions}\label{conclusions}
-We worked hard, and achieved very little.
+\begin{figure}[H]
+  \includegraphics[width=\linewidth, scale=.5]{images/T1.png}
+  \caption{Predicted TATA stock overlapped with predicted TATA stock. The predicted is in blue while the real is in red. This is done with 20\% dropout}
+\end{figure}
 
-\bibliographystyle{abbrv}
-\bibliography{main}
+Furthermore, for this first test, the training data is going to be over the entire data to see how well the NN can match the patterns of the stock. The purpose is to ultimately determine whether mapping NN to crypto-currencies in a real-time manner will be productive and viable. As we can see in figure 10, the NN is able to accurately mimic the overall pattern of the actual stock. Note, this was done using dropout at 20\% in between each LSTM layer. 
+
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{images/T2.png}
+  \caption{Predicted TATA stock overlapped with predicted TATA stock. The predicted is in blue while the real is in red. This is done with 10\% dropout}
+\end{figure}
+
+Next test on this data will be using dropout at 10\%. It is immediately clear that there is no real gain. In fact, in some areas, such as at the beginning, there are certain features that are becoming much higher resolution. However, this could also be from overfitting. 
+
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{images/T3.png}
+  \caption{Predicted TATA stock overlapped with predicted TATA stock. The predicted is in blue while the real is in red. This is done with no dropout}
+\end{figure}
+
+Lastly, if we look at the NN without any dropout, it looks nearly identically to that of 10\% dropout. However, the NN without dropout consistently over estimated while the 10\% dropout was the most accurate. This means that a dropout of 10\% will give the most optimal results as 20\% underestimates and 0\% overestimates. Now that the optimal dropout rate is determined, it is important to determine which optimizer is the best. Our main options are listed below:
+
+%http://ruder.io/optimizing-gradient-descent/index.html#rmsprop
+\begin{enumerate}
+\item Adam
+\item RMSProp
+\item SGDNesterov
+\item AdaDelta
+\item AdaGrad
+\end{enumerate}
+
+\begin{figure}[H]
+\quad Adam is a variation of stochastic gradient descent that is designed to be computationally efficient, memory light, and does well on problems with sparse gradients and non-stationary problems. RMSProp is an adaptive learning method that minimizes the error with root mean square. SGDNesterov is gradient descent but adds momentum to make training much quicker. AdaDelta is adagrad but attempts to optimize the learning rate mechanism to make training more efficient. Lastly, adagrad is a gradient descent algorithm that adapts the learning rate to the parameters of the problem. Below are several graphs demonstrating the loss over 10 epochs of each optimization algorithm. The ideal algorithm is one that is able to significantly reduce initial loss while continuing to learn in minimal time.  \cite{ruder_2019}
+
+
+  \includegraphics[width=\linewidth]{images/adagradloss.png}
+  \caption{AdaGrad Loss over 10 epochs}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=\linewidth, height=80mm]{images/sgdloss.png}
+  \caption{SGDNesterov Loss over 10 epochs}
+  
+  \includegraphics[width=\linewidth, height=80mm]{images/adadeltaloss.png}
+  \caption{AdaDelta Loss over 10 epochs}
+\end{figure}
+
+\begin{figure}
+  \includegraphics[width=\linewidth, height=80mm]{images/rmsloss.png}
+  \caption{RMSProp Loss over 10 epochs}
+  
+   \includegraphics[width=\linewidth, height=80mm]{images/adamloss.png}
+  \caption{Adam Loss over 10 epochs}
+\end{figure}
+
+
+\section{Conclusion}\label{conclusions}
+Neural Networks show tremendous promise in predicting stock markets. Although, as thoroughly explained before, LSTMs are the only NN that are capable of predicting time sequences over large amounts of time, there are many different types of operations that can be done. \\
+
+When working with stock markets, it is important to get 2 main aspects correct: the model and the optimization. For the model, my data shows that the optimal model is LSTM with dropout layers in between set to dropout 10\%. Next, the best optimization model is Adam. Although all the models have fairly low numbers - with some exceptions - adam does so with the least amount of memory and in the quickest time. As a result, it can more quickly output more accurate data which is vital when working with stocks; every second counts. \\
+
+On github, there is code to a web dashboard that uses the specified findings to attempt to predict stock prices and crypto-currencies in real time. Since stocks depend more on the news and less on patterns, they are more difficult to predict. However, crypto currencies are perfect as they are usually only traded by looking at patterns and make calculated best. In combination with an algorithm to make optimal trading decisions, the NN could potentially be extremely useful in creating a very small income. 
+ 
+\nocite{sas} 
+ 
+\newpage
+
+\bibliography{main} 
+\bibliographystyle{ieeetr}
+
 
 %https://www.sas.com/en_us/insights/analytics/what-is-artificial-intelligence.html
+
 
 \end{document}
