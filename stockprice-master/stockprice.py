@@ -55,32 +55,28 @@ from keras.layers import Dropout
 #%%
 # Initialising the RNN
 regressor = Sequential()
+dropout_level = .1
 
 # Adding the first LSTM layer and some Dropout regularisation
 regressor.add(LSTM(units = 50, return_sequences = True, input_shape = (X_train.shape[1], 1)))
-regressor.add(Dropout(0.2))
+regressor.add(Dropout(dropout_level))
 
 
-#%%
 # Adding a second LSTM layer and some Dropout regularisation
 regressor.add(LSTM(units = 50, return_sequences = True))
-regressor.add(Dropout(0.2))
+regressor.add(Dropout(dropout_level))
 
 
-#%%
 
 # Adding a third LSTM layer and some Dropout regularisation
 regressor.add(LSTM(units = 50, return_sequences = True))
-regressor.add(Dropout(0.2))
+regressor.add(Dropout(dropout_level))
 
 
-#%%
 # Adding a fourth LSTM layer and some Dropout regularisation
 regressor.add(LSTM(units = 50))
-regressor.add(Dropout(0.2))
+regressor.add(Dropout(dropout_level))
 
-
-#%%
 # Adding the output layer
 regressor.add(Dense(units = 1))
 
@@ -117,12 +113,10 @@ predicted_stock_price = sc.inverse_transform(predicted_stock_price)
 
 #%%
 # Visualising the results
-plt.plot(dataset_total.iloc[0:1000], color = 'red', label = 'Real TATA Stock Price')
+plt.plot(dataset_total.iloc[60:1000].values, color = 'red', label = 'Real TATA Stock Price')
 plt.plot(predicted_stock_price, color = 'blue', label = 'Predicted TAT Stock Price')
 plt.title('TATA Stock Price Prediction')
 plt.xlabel('Time')
 plt.ylabel('TATA Stock Price')
 plt.legend()
-plt.savefig('../TexFiles/images/T1.png')
-
-
+# plt.savefig('../TexFiles/images/T3.png')
